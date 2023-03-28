@@ -124,7 +124,7 @@ jobs:
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-virtio.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/mvsas/rpext-index.json
       - name: 添加扩展驱动[dva3221]
-        if: matrix.platform == 'ds920p' || matrix.platform == 'ds1621p' || matrix.platform == 'ds3622xsp'
+        if: matrix.platform == 'ds920p' || matrix.platform == 'ds1621p' 
         run: |
           echo '等待整理兼容性扩展~😀'
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-boot-wait.json
@@ -134,7 +134,7 @@ jobs:
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-misc.json
 
       - name: 添加 jumkey.dtb !!!Create your own device tree binary!!!
-        if: matrix.platform == 'ds920p' || matrix.platform == 'ds1621p' || matrix.platform == 'ds3622xsp'
+        if: matrix.platform == 'ds920p' || matrix.platform == 'ds1621p' 
         run: |
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-dtb.json
           echo '!!!Create your own device tree binary!!!'
