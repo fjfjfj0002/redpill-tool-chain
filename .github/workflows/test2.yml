@@ -122,7 +122,85 @@ jobs:
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-boot-wait.json
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-acpid.json
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-virtio.json
+          ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/pocopico-r8125.json
+          ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-dtb.json
+          ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-misc.json
+          
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/mvsas/rpext-index.json
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add    
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add    
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add  
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add  
+          
+          
+          
       - name: 添加扩展驱动[dva3221]
         if: matrix.platform == 'ds920p' || matrix.platform == 'ds1621p' 
         run: |
