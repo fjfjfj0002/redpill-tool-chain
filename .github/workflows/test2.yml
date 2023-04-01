@@ -41,13 +41,13 @@ jobs:
 
 #           - platform: ds3617xs
 #             version: 7.0.1-42218
-#          - platform: ds3617xs
-#            version: 7.1.0-42661
+          - platform: ds3617xs
+            version: 7.1.0-42661
 
 #          - platform: ds3622xsp
 #            version: 7.0.1-42218
-          - platform: ds3622xsp
-            version: 7.1.0-42661
+#          - platform: ds3622xsp
+#            version: 7.1.0-42661
 
 #          - platform: ds918p
 #            version: 6.2.4-25556
@@ -107,7 +107,6 @@ jobs:
 
           # 调整synoinfo
           sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"maxlanport": "2"\n    },/' ${{matrix.platform}}_user_config.json
-          
           sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"esataportcfg": "0x0"\n    },/' ${{matrix.platform}}_user_config.json
           sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"internalportcfg": "0xfffffffff"\n    },/' ${{matrix.platform}}_user_config.json
           sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"maxdisks": "36"\n    },/' ${{matrix.platform}}_user_config.json
