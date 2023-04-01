@@ -127,7 +127,7 @@ jobs:
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-misc.json
           
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/mvsas/rpext-index.json
-          ./redpill_tool_chain.sh add 
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/3w-sas/rpext-index.json
           ./redpill_tool_chain.sh add
           ./redpill_tool_chain.sh add 
           ./redpill_tool_chain.sh add 
