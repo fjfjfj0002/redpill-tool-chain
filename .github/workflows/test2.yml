@@ -111,9 +111,8 @@ jobs:
           sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"esataportcfg": "0x0"\n    },/' ${{matrix.platform}}_user_config.json
           sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"internalportcfg": "0xfffffffff"\n    },/' ${{matrix.platform}}_user_config.json
           sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"maxdisks": "36"\n    },/' ${{matrix.platform}}_user_config.json
-          
-          
-          
+          sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"sataportmap": "6"\n    },/' ${{matrix.platform}}_user_config.json
+          sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"diskidxmap": "00"\n    },/' ${{matrix.platform}}_user_config.json
           
 
       - name: 添加扩展驱动
