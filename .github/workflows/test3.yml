@@ -106,12 +106,7 @@ jobs:
           sed -i -e 's/0011323D47F6"/&,\n\t"mac2": "0011323D47F7",\n\t"mac3": "0011323D47F8",\n\t"mac4": "0011323D47F9",\n\t"netif_num": 4/' ${{matrix.platform}}_user_config.json
 
           # 调整synoinfo
-          sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"maxlanport": "7"\n    },/' ${{matrix.platform}}_user_config.json
-          sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"esataportcfg": "0x00"\n    },/' ${{matrix.platform}}_user_config.json
-          sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"internalportcfg": "0xfffffffff"\n    },/' ${{matrix.platform}}_user_config.json
-          sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"maxdisks": "36"\n    },/' ${{matrix.platform}}_user_config.json
-          sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"sataportmap": "6"\n    },/' ${{matrix.platform}}_user_config.json
-          sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"diskidxmap": "00"\n    },/' ${{matrix.platform}}_user_config.json
+          sed -i -e 's/"synoinfo": {},/"synoinfo": {\n\t"maxlanport": "4"\n    },/' ${{matrix.platform}}_user_config.json
           
 
       - name: 添加扩展驱动
@@ -119,21 +114,10 @@ jobs:
         run: |
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-boot-wait.json
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-acpid.json
-          ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-virtio.json
-
-          
+          ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-virtio.json          
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/mvsas/rpext-index.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000/rpext-index.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000e/rpext-index.json
-
-          
-          
-          
-          
-          
-          
-          
-          
           
       - name: 添加扩展驱动[dva3221]
         if: matrix.platform == 'ds920p' || matrix.platform == 'ds1621p' 
